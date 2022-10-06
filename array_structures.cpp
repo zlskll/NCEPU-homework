@@ -1,7 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include<iostream>
 using namespace std;
-//int FibonacciNumber(int n) {//ÏÈÉú³Éì³²¨ÄÇÆõÊý
+//int FibonacciNumber(int n) {//å…ˆç”Ÿæˆæ–æ³¢é‚£å¥‘æ•°
 //	if (n == 1 || n==2) {
 //		return 1;
 //	}
@@ -13,7 +13,7 @@ using namespace std;
 //	int sum = 0;
 //	cin >> n;
 //	for (int i = 1; i <= n; i++) {
-//		sum += FibonacciNumber(i);//È»ºóÔÙ¼ÓºÍ
+//		sum += FibonacciNumber(i);//ç„¶åŽå†åŠ å’Œ
 //	}
 //	cout << sum;
 //	return 0;
@@ -21,7 +21,7 @@ using namespace std;
 //int main() {
 //	int arr[100]={ 0 };
 //	int i = 0;
-//	double sum = 0;//ÇóÆ½¾ùÊýÏÈÇóºÍ
+//	double sum = 0;//æ±‚å¹³å‡æ•°å…ˆæ±‚å’Œ
 //	for (i = 0;; i++) {
 //		cin >> arr[i];
 //		if (arr[i] > 0) {
@@ -47,8 +47,8 @@ using namespace std;
 //	int m = 0;
 //	int n = 0;
 //	cin >> m >> n;
-//	int i = 0;//ÐÐ
-//	int j = 0;//ÁÐ
+//	int i = 0;//è¡Œ
+//	int j = 0;//åˆ—
 //	for (i = 0; i < m; i++) {
 //		for (j = 0; j < n; j++) {
 //			cin >> arr[i][j];
@@ -60,15 +60,15 @@ using namespace std;
 //			every_line_max = every_line_max < arr[i][j] ? arr[i][j] : every_line_max;
 //		}
 //		cout << every_line_max << ' ';
-//	}//ÕÒ³öÁËÃ¿ÐÐµÄ×î´óÖµ
+//	}//æ‰¾å‡ºäº†æ¯è¡Œçš„æœ€å¤§å€¼
 //	cout << endl;
 //	for (j = 0; j< n; j++) {
-//		int every_row_min = arr[0][j];//×¢Òâ´ÓµÚ0ÁÐ¿ªÊ¼
+//		int every_row_min = arr[0][j];//æ³¨æ„ä»Žç¬¬0åˆ—å¼€å§‹
 //		for (i = 0; i < m; i++) {
 //			every_row_min = every_row_min > arr[i][j] ? arr[i][j] : every_row_min;
 //		}
 //		cout << every_row_min << ' ';
-//	}//ÕÒ³öÃ¿ÁÐµÄ×îÐ¡Öµ
+//	}//æ‰¾å‡ºæ¯åˆ—çš„æœ€å°å€¼
 //	return 0;
 //}
 //bool IsPrime(int n){
@@ -91,16 +91,16 @@ using namespace std;
 //	}
 //
 //}
-//void Line(int* p, int sl) {//Ã°ÅÝÅÅÐò
+//void Line(int* p, int sl) {//å†’æ³¡æŽ’åº
 //	for (int i = 0; i < sl; i++) {
 //		int j = 0;
 //		while (j < sl-1-i) {
 //			if (*(p+j) < *(p +j + 1)) {
 //				int tmp = *(p+j);
 //				*(p+j) = *(p + j + 1);
-//				*(p + j + 1) = tmp;//½»»»
+//				*(p + j + 1) = tmp;//äº¤æ¢
 //			}
-//			//p++  pµÄÆðµã²»ÄÜ±ä£¡£¡
+//			//p++  pçš„èµ·ç‚¹ä¸èƒ½å˜ï¼ï¼
 //			j++;
 //		}
 //	}
@@ -113,12 +113,12 @@ using namespace std;
 //	int i = 0;
 //	int sum = 0;
 //	for (i = 0; i < n; i++) {
-//		cin >> arr[i];//ÊäÈëÄÇÒ»´®Êý
+//		cin >> arr[i];//è¾“å…¥é‚£ä¸€ä¸²æ•°
 //	}
 //	int j = 0;
-//	for (i = 0; i < n; i++) {//¶ÔÊäÈëµÄÃ¿Ò»¸öÊý°¤¸ö½øÐÐÉ¸Ñ¡
+//	for (i = 0; i < n; i++) {//å¯¹è¾“å…¥çš„æ¯ä¸€ä¸ªæ•°æŒ¨ä¸ªè¿›è¡Œç­›é€‰
 //		int ret = 0;
-//		if (IsPrime(arr[i])) {//ÊÇËØÊý
+//		if (IsPrime(arr[i])) {//æ˜¯ç´ æ•°
 //			sum += arr[i];
 //			ret = arr[i];
 //		}
@@ -129,7 +129,7 @@ using namespace std;
 //	}
 //	cout << sum<<endl;
 //	/*int k = 0;*/
-//	//È»ºó¶Ôarr2[]½øÐÐÅÅÐò¾ÍokÁË
+//	//ç„¶åŽå¯¹arr2[]è¿›è¡ŒæŽ’åºå°±okäº†
 //	/*for (k = 0; k < j; k++) {
 //		max = arr2[k];
 //		int ret = k;
@@ -147,8 +147,8 @@ using namespace std;
 //	return 0;
 //}
 int main() {
-	int m = 0;//ÐÐ
-	int n = 0;//ÁÐ
+	int m = 0;//è¡Œ
+	int n = 0;//åˆ—
 	int arr[100][100] = {0};
 	cin >> m >> n;
 	int i = 0;
@@ -161,7 +161,7 @@ int main() {
 	
 	int allsum = 0;
 	for (i = 0; i < m; i++) {
-		int rowsum = 0;//ÕâÒ»ÐÐÒª·ÅÔÚÕâ£¬ÊÇÒªÇå³ýÉÏÒ»ÐÐÁôÏÂÀ´µÄÊý¾Ý£¬·ÀÖ¹µþ¼Ó
+		int rowsum = 0;//è¿™ä¸€è¡Œè¦æ”¾åœ¨è¿™ï¼Œæ˜¯è¦æ¸…é™¤ä¸Šä¸€è¡Œç•™ä¸‹æ¥çš„æ•°æ®ï¼Œé˜²æ­¢å åŠ 
 		for (j = 0; j < n; j++) {
 			rowsum += arr[i][j];
 		}
